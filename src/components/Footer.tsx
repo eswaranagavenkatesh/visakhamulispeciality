@@ -92,7 +92,7 @@ const Footer = () => {
               {[
                 { name: "Doctor Clinic", path: "/services/doctor-clinic" },
                 { name: "Medical Lab", path: "/services/medical-lab" },
-                { name: "Pharmacy", path: "/pharmacy" }, // ✅ renamed & fixed path
+                { name: "Pharmacy", path: "/pharmacy" },
                 { name: "Home Health Care", path: "/services/home-health-care" },
               ].map((service) => (
                 <li key={service.name}>
@@ -116,8 +116,13 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  KGH Down, Opp KGH Clock Tower, Krishna Nagar, Jagadamba
-                  Junction, Visakhapatnam, Andhra Pradesh 530002
+                  Maharanipeta, Visakhapatnam, Andhra Pradesh 530002
+                </span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <span className="text-muted-foreground text-sm">
+                  Opp Tiles Mart, Madhurawada, Visakhapatnam, Andhra Pradesh
                 </span>
               </li>
               <li className="flex items-center space-x-3">

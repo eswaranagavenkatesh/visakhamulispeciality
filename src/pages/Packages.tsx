@@ -10,58 +10,189 @@ import labBanner from "@/assets/lab-banner.jpg";
 const Packages = () => {
   const packages = [
     {
-      name: "Basic Health Checkup",
-      price: "₹1,999",
+      name: "Basic Diabetic Health Check",
+      price: "₹1,399",
       popular: false,
       tests: [
         "Complete Blood Count (CBC)",
-        "Blood Sugar (Fasting)",
+        "Fasting Blood Sugar (FBS)",
+        "Post Prandial Blood Sugar (PPBS)",
+        "Creatinine",
         "Lipid Profile",
-        "Liver Function Test",
-        "Kidney Function Test",
-        "Urine Analysis"
+        "Complete Urine Examination (CUE)",
+        "HbA1c",
+        "ECG",
+        "Physician Consultation"
       ]
     },
     {
-      name: "Comprehensive Health Checkup",
-      price: "₹3,999",
+      name: "Advanced Diabetic Health Check",
+      price: "₹2,299",
+      popular: false,
+      tests: [
+        "All tests from Basic Diabetic Health Check",
+        "2D Echo"
+      ]
+    },
+    {
+      name: "Complete Diabetic Health Check",
+      price: "₹4,999",
       popular: true,
       tests: [
-        "All tests from Basic Package",
+        "All tests from Advanced Diabetic Health Check",
         "Thyroid Profile",
-        "Vitamin D3",
-        "Vitamin B12",
+        "Liver Function Test (LFT)",
+        "High-Sensitivity CRP (HS CRP)",
+        "Chest X-Ray",
+        "Cardiology Consultation"
+      ]
+    },
+    {
+      name: "Basic Cardiac Health Check",
+      price: "₹1,899",
+      popular: false,
+      tests: [
+        "Complete Blood Count (CBC)",
+        "Fasting Blood Sugar (FBS)",
+        "Post Prandial Blood Sugar (PPBS)",
+        "Creatinine",
+        "Lipid Profile",
+        "ECG",
+        "2D Echo",
+        "Cardiology Consultation"
+      ]
+    },
+    {
+      name: "Advanced Cardiac Health Check",
+      price: "₹2,799",
+      popular: false,
+      tests: [
+        "All tests from Basic Cardiac Health Check",
+        "Treadmill Test (TMT)"
+      ]
+    },
+    {
+      name: "Complete Cardiac Health Check",
+      price: "₹4,799",
+      popular: true,
+      tests: [
+        "All tests from Advanced Cardiac Health Check",
+        "Thyroid Profile",
+        "Liver Function Test (LFT)",
+        "High-Sensitivity CRP (HS CRP)",
+        "Homocysteine",
+        "Chest X-Ray"
+      ]
+    },
+    {
+      name: "Bone Package",
+      price: "₹1,599",
+      popular: false,
+      tests: [
+        "Complete Blood Count (CBC)",
+        "Erythrocyte Sedimentation Rate (ESR)",
+        "Serum Calcium",
+        "Vitamin D",
+        "Orthopedic Consultation"
+      ]
+    },
+    {
+      name: "Joint Package",
+      price: "₹2,099",
+      popular: false,
+      tests: [
+        "All tests from Bone Package",
+        "X-Rays of Both Knee Joints (AP/Lateral Views)"
+      ]
+    },
+    {
+      name: "Master Health Check - Non Diabetic Package",
+      price: "₹4,100",
+      popular: false,
+      tests: [
+        "Complete Blood Count (CBC)",
+        "Erythrocyte Sedimentation Rate (ESR)",
+        "Fasting Blood Sugar (FBS)",
+        "Post Prandial Blood Sugar (PPBS)",
+        "Creatinine",
+        "Liver Function Test (LFT)",
+        "Thyroid Profile",
+        "Lipid Profile",
+        "Complete Urine Examination (CUE)",
+        "Uric Acid",
+        "HBsAg",
+        "Blood Grouping",
         "ECG",
         "Chest X-Ray",
+        "Ultrasound Scan (U/S Scan)",
+        "2D Echo",
+        "Physician Consultation"
+      ]
+    },
+    {
+      name: "Master Health Check - Diabetic Package",
+      price: "₹4,400",
+      popular: false,
+      tests: [
+        "All tests from Non Diabetic Package",
+        "HbA1c"
+      ]
+    },
+    {
+      name: "Basic Gynaecology Check",
+      price: "₹2,799",
+      popular: false,
+      tests: [
+        "Complete Blood Count (CBC)",
+        "Random Blood Sugar (RBS)",
+        "Creatinine",
+        "Thyroid Profile",
+        "VDRL",
+        "HIV",
+        "HBsAg",
+        "Pap Smear",
+        "Blood Grouping",
+        "Complete Urine Examination (CUE)",
+        "Ultrasound Scan (U/S Scan)",
+        "Gynaecology Consultation"
+      ]
+    },
+    {
+      name: "Advanced Gynaecology Check",
+      price: "₹4,299",
+      popular: false,
+      tests: [
+        "All tests from Basic Gynaecology Check",
+        "Vitamin D",
+        "Serum Calcium",
+        "Vitamin B12"
+      ]
+    },
+    {
+      name: "Infertility Package - Female",
+      price: "₹1,950",
+      popular: false,
+      tests: [
+        "Hemoglobin (HB%)",
+        "Random Blood Sugar (RBS)",
+        "Thyroid Stimulating Hormone (TSH)",
+        "Ultrasound Scan",
+        "Prolactin",
+        "Semen Analysis",
         "Doctor Consultation"
       ]
     },
     {
-      name: "Diabetes Care Package",
-      price: "₹2,499",
+      name: "Infertility Package - Male",
+      price: "₹2,450",
       popular: false,
       tests: [
-        "HbA1c",
-        "Blood Sugar (Fasting & PP)",
-        "Lipid Profile",
-        "Kidney Function Test",
-        "Urine Microalbumin",
-        "Diabetic Foot Assessment"
-      ]
-    },
-    {
-      name: "Women's Health Package",
-      price: "₹4,499",
-      popular: false,
-      tests: [
-        "Complete Blood Count",
-        "Thyroid Profile",
-        "Iron Studies",
-        "Vitamin D & B12",
-        "Pap Smear",
-        "Mammography",
-        "Bone Density Test",
-        "Gynecologist Consultation"
+        "Hemoglobin (HB%)",
+        "Random Blood Sugar (RBS)",
+        "Testosterone",
+        "Semen Analysis",
+        "Scrotal Doppler",
+        "Doctor Consultation"
       ]
     }
   ];

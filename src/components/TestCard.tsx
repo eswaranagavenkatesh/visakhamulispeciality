@@ -1,6 +1,7 @@
 import { Clock, IndianRupee, FlaskConical } from "lucide-react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 interface TestCardProps {
   name: string;
@@ -43,9 +44,11 @@ const TestCard = ({ name, description, price, duration, preparation, onBookTest 
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="w-full" onClick={onBookTest}>
-          Book Test
-        </Button>
+        <Link to="/book-test" state={{ test: { name, description, price, duration, preparation } }}>
+          <Button className="w-full" onClick={onBookTest}>
+            Book Test
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );

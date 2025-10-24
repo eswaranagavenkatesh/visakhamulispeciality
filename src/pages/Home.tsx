@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Stethoscope, Calendar, Users, Award, Heart, ShieldCheck, Clock, Award as TrophyIcon, ArrowRight, TestTube, Pill, Home as HomeIcon, Phone, Mail, MapPin } from "lucide-react";
+import { Stethoscope, Calendar, Users, Award, Heart, ShieldCheck, Clock, ArrowRight, Pill, Home as HomeIcon, Phone, Mail, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GoogleMap from "@/components/GoogleMap";
@@ -71,8 +71,8 @@ const Home = () => {
     <div className="min-h-screen bg-background">
       <SEOHead 
         title="Best Multispeciality Clinic in Visakhapatnam | Vishakaha Healthcare - 10 Years Excellence"
-        description="Premier multispeciality hospital in Vizag offering expert doctor consultations, advanced diagnostic lab, pharmacy, home healthcare & wellness services. 10+ years trusted healthcare near KGH & Madhurawada. Book appointment online."
-        keywords="multispeciality clinic visakhapatnam, best hospital in vizag, doctor consultation vizag, medical lab visakhapatnam, pharmacy near KGH, home healthcare vizag, health checkup packages, cardiologist vizag, pediatrician visakhapatnam, general physician near me, diagnostic center vizag, pathology lab visakhapatnam, lifestyle clinic vizag, physiotherapy visakhapatnam, emergency clinic jagadamba junction, best clinic near KGH, multispeciality hospital madhurawada, healthcare services andhra pradesh"
+        description="Premier multispeciality hospital in Vizag offering expert doctor consultations, advanced diagnostic lab, pharmacy, home healthcare & wellness services. 10+ years trusted healthcare in Maharanipeta & Madhurawada. Book appointment online."
+        keywords="multispeciality clinic visakhapatnam, best hospital in vizag, doctor consultation vizag, medical lab visakhapatnam, pharmacy maharanipeta, home healthcare vizag, health checkup packages, cardiologist vizag, pediatrician visakhapatnam, general physician near me, diagnostic center vizag, pathology lab visakhapatnam, lifestyle clinic vizag, physiotherapy visakhapatnam, best clinic maharanipeta, multispeciality hospital madhurawada, healthcare services andhra pradesh"
         canonicalUrl="https://vishakahaclinic.com"
       />
       <StructuredData type="homepage" />
@@ -90,7 +90,7 @@ const Home = () => {
                 Treat with Respect... Your Trusted Healthcare Partner in Vizag
               </p>
               <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
-                Vishakaha Multispeciality Clinic provides comprehensive healthcare services in Visakhapatnam with experienced specialist doctors, advanced diagnostic laboratory, 24/7 pharmacy, and state-of-the-art medical facilities. Serving patients near KGH Junction and Madhurawada with compassionate care since 2014.
+                Vishakaha Multispeciality Clinic provides comprehensive healthcare services in Visakhapatnam with experienced specialist doctors, advanced diagnostic laboratory, 24/7 pharmacy, and state-of-the-art medical facilities. Serving patients in Maharanipeta and Madhurawada with compassionate care since 2014.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
                 <Link to="/book-appointment">
@@ -391,8 +391,24 @@ const Home = () => {
               </Button>
             </Link>
           </div>
-          <div className="w-full max-w-[640px] mx-auto" style={{ height: '1663px', overflow: 'hidden' }}>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVBFGlu0O-vN7Yso6WWdjJG3s6Yss4rajX_-Re2sqAL8Ixow/viewform?embedded=true" width="640" height="884" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <div 
+            className="w-full max-w-[640px] mx-auto bg-muted" 
+            style={{ 
+              height: '1174px', 
+              overflowY: 'hidden', 
+              borderRadius: 'var(--radius)' 
+            }}
+          >
+            <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSd_j4L6xstkE8HGqPEkUURbtI4eDzE-paxfO7OFrFaTqpW20Q/viewform?embedded=true" 
+              width="640" 
+              height="1174" 
+              frameBorder="0" 
+              marginHeight={0} 
+              marginWidth={0}
+            >
+              Loading…
+            </iframe>
           </div>
         </div>
       </section>
@@ -411,7 +427,7 @@ const Home = () => {
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-2">
                   <strong>Location 1:</strong><br />
-                  Opp KGH Clock Tower, Jagadamba Junction
+                  Maharanipeta, Visakhapatnam
                 </p>
                 <p className="text-sm text-muted-foreground">
                   <strong>Location 2:</strong><br />
@@ -465,7 +481,48 @@ const Home = () => {
             Visit Us
           </h2>
           <div className="max-w-4xl mx-auto">
-            <GoogleMap />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Maharanipeta Map */}
+              <div className="flex flex-col items-center">
+                <h3 className="text-xl font-semibold text-foreground mb-4">
+                  Maharanipeta Branch
+                </h3>
+                <div
+                  className="w-full bg-muted"
+                  style={{
+                    height: '450px',
+                    overflowY: 'hidden',
+                    borderRadius: 'var(--radius)'
+                  }}
+                >
+                  <GoogleMap />
+                </div>
+              </div>
+              {/* Madhurawada Map */}
+              <div className="flex flex-col items-center">
+                <h3 className="text-xl font-semibold text-foreground mb-4">
+                  Madhurawada Branch
+                </h3>
+                <div
+                  className="w-full bg-muted"
+                  style={{
+                    height: '450px',
+                    overflowY: 'hidden',
+                    borderRadius: 'var(--radius)'
+                  }}
+                >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15194.11077963066!2d83.357172!3d17.813881!3m2!1i1024!2i768!4f13.1!2m1!1sVisakha%20Multispeciality%20clinics%20and%20Diagnostics%20Chandrampalem%20Srinivasa%20Nagar%20Madhurawada%20Visakhapatnam%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1760864825523!5m2!1sen!2sin"
+                    width="600"
+                    height="450"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
