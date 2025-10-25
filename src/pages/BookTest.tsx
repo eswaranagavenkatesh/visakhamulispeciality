@@ -19,7 +19,7 @@ const BookTest = () => {
         title="Book Diagnostic Test | Vishakaha Multispeciality Clinic Visakhapatnam"
         description="Book your diagnostic test at Vishakaha Multispeciality Clinic in Visakhapatnam. NABL-accredited lab, quick results, and expert technicians. Schedule your test now."
         keywords="book diagnostic test visakhapatnam, medical lab vizag, pathology lab visakhapatnam, diagnostic center vizag, blood test vizag, health checkup visakhapatnam"
-        canonicalUrl="https://vishakahaclinic.com/book-test"
+        canonicalUrl="https://visakhamultispeciality.com/book-test"
       />
       <StructuredData type="booking" />
 

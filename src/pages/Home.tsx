@@ -73,7 +73,7 @@ const Home = () => {
         title="Best Multispeciality Clinic in Visakhapatnam | Vishakaha Healthcare - 10 Years Excellence"
         description="Premier multispeciality hospital in Vizag offering expert doctor consultations, advanced diagnostic lab, pharmacy, home healthcare & wellness services. 10+ years trusted healthcare in Maharanipeta & Madhurawada. Book appointment online."
         keywords="multispeciality clinic visakhapatnam, best hospital in vizag, doctor consultation vizag, medical lab visakhapatnam, pharmacy maharanipeta, home healthcare vizag, health checkup packages, cardiologist vizag, pediatrician visakhapatnam, general physician near me, diagnostic center vizag, pathology lab visakhapatnam, lifestyle clinic vizag, physiotherapy visakhapatnam, best clinic maharanipeta, multispeciality hospital madhurawada, healthcare services andhra pradesh"
-        canonicalUrl="https://vishakahaclinic.com"
+        canonicalUrl="https://visakhamultispeciality.com"
       />
       <StructuredData type="homepage" />
       <Navbar />
