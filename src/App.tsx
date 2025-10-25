@@ -29,20 +29,20 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/doctor-clinic" element={<DoctorClinic />} />
-          <Route path="/services/medical-lab" element={<MedicalLab />} />
-          <Route path="/services/home-health-care" element={<HomeHealthCare />} />
-          <Route path="/pharmacy" element={<Pharmacy />} />
-          <Route path="/packages" element={<Packages />} />
-          <Route path="/health-packages" element={<Packages />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/book-appointment" element={<BookAppointment />} />
-          <Route path="/book-test" element={<BookTest />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/feedback" element={<Feedback />} />
-          <Route path="*" element={<NotFound />} />
+<Route path="/services" element={<Services />} />
+<Route path="/services/doctor-clinic" element={<DoctorClinic />} />
+<Route path="/services/medical-lab" element={<MedicalLab />} />
+<Route path="/services/home-health-care" element={<HomeHealthCare />} />
+<Route path="/pharmacy" element={<Pharmacy />} />
+<Route path="/packages" element={<Packages />} />
+<Route path="/health-packages" element={<Packages />} />
+<Route path="/about" element={<About />} />
+<Route path="/contact" element={<Contact />} />
+<Route path="/book-appointment" element={<BookAppointment />} />
+<Route path="/book-test" element={<BookTest />} />
+<Route path="/gallery" element={<Gallery />} />
+<Route path="/feedback" element={<Feedback />} />
+<Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
